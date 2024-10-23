@@ -177,6 +177,7 @@ local function createVimModal(vim)
         end
       end)
       :bindWithRepeat({'shift'}, '4', motion(LineEnd)) -- $
+      :bindWithRepeat({'shift'}, '6', motion(LineBeginning)) -- $
       :bindWithRepeat({}, 'b', motion(BackWord))
       :bindWithRepeat({'shift'}, 'b', motion(BackBigWord))
       :bindWithRepeat({}, 'e', motion(EndOfWord))
